@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <H1>Meme Generator</H1>
+  </header>
+  <p>Fill out the form to start creating memes!</p>
+  <form id="meme-form">
+    <div class="meme-generator">
+      <label for="imageURL">Image URL</label>
+      <input name="imageURL" type="url" id="imageURL" placeholder="What's the URL for your meme image?">
+    </div>
+
+    <div class="meme-generator">
+      <label for="topText">Top Text</label>
+      <input type="text" id="topText" name="topText" placeholder="What text do you want at the top of the meme?">
+    </div>
+
+    <div class="meme-generator">
+      <label for="bottomText">Bottom Text</label>
+      <input type="text" id="bottomText" name="bottomText"
+        placeholder="What text do you want at the bottom of the meme?">
+    </div>
+    <button type="submit" class="meme-btn">Add Meme</button>
+    <div>*To delete meme double click on it </div>
+  </form>
+  <!-- New memes go here -->
+  <div id="meme-container">
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
